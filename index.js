@@ -39,6 +39,10 @@ app.use(
     },
   })
 );
+//hello world
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
 
 // Registering Routes
 app.use("/api/v1", defaultRoutes);
